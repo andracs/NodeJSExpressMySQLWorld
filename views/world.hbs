@@ -1,7 +1,13 @@
-<h1>{{title}}</h1>
+<h1 class="shadow p-3 mb-5 bg-white rounded">{{title}}</h1>
+<table class="table table-dark">
+  <tbody>
+    
 {{#each world}}
     {{#with this}}
-        <p>{{Name}}, population {{Population}}.</p>
+        <tr><td>{{Name}}, population {{Population}}.</td></tr>
     {{/with}}
-{{/each}}¨
+{{/each}}
+  </tbody>
+</table>
+
 <!-- {{raw}} -->

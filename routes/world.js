@@ -24,6 +24,13 @@ router.get('/', function(req, res){
   });
 });
 
+router.get('/rest', function(req, res){
+  connection.query('SELECT * FROM country', function(err, rows){
+    var world = {countries: rows} 
+    res.send(world);
+  });
+});
+
 module.exports = router;
 
 
