@@ -17,7 +17,7 @@ router.get('/', function(req, res){
     rows.map((row) => {row.name;});
 
     res.render('world', {
-      title: 'Countries in World Database',
+      title: 'Countries in the World.sql database',
       world : rows,
       raw: JSON.stringify(rows)
     });
